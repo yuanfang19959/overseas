@@ -30,6 +30,13 @@ module.exports = {
       '@utils': path.resolve(__dirname, '../src/assets/js/ajax'),
     }
   },
+  externals: {
+    'vue': 'Vue',
+    // 'vue-router': 'VueRouter',
+    'vuex': 'Vuex',
+    // 'axios': 'axios',
+    // 'element-ui': 'ElementUI'
+},
   module: {
     rules: [
       {

@@ -1,8 +1,8 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
+// import Vue from 'vue'
 import App from './App'
-import router from './router'
+
 
 //引入过滤器
 import * as filters from './filters/index.js'
@@ -15,36 +15,36 @@ Object.keys(filters).forEach(key => {
 require('es6-promise').polyfill();
 require('es6-promise/auto');
 // use ElementUI
-import {
-  Option,
-  Select,
-  Input,
-  DatePicker,
-  Message,
-  Pagination,
-  Form,
-  FormItem
-} from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(Option)
-Vue.use(Select)
-Vue.use(Input)
-Vue.use(DatePicker)
-Vue.use(Pagination)
-Vue.use(Form)
-Vue.use(FormItem)
+// import {
+//   Option,
+//   Select,
+//   Input,
+//   DatePicker,
+//   Message,
+//   Pagination,
+//   Form,
+//   FormItem
+// } from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css';
+// Vue.use(Option)
+// Vue.use(Select)
+// Vue.use(Input)
+// Vue.use(DatePicker)
+// Vue.use(Pagination)
+// Vue.use(Form)
+// Vue.use(FormItem)
 
 // 判断是否为ie 看情况使用哪种形式
-if (!!window.ActiveXObject || "ActiveXObject" in window){
-    // 使用use方式会导致刷新页面的时候，弹出mesage
-    // 但是如果在ie中不使用use 则会报错
-    Vue.use(Message)
-}else{
-    Vue.component(Message.name, Message)
-}
+// if (!!window.ActiveXObject || "ActiveXObject" in window){
+//     // 使用use方式会导致刷新页面的时候，弹出mesage
+//     // 但是如果在ie中不使用use 则会报错
+//     Vue.use(Message)
+// }else{
+//     Vue.component(Message.name, Message)
+// }
   
 Vue.config.productionTip = false
-
+import router from './router'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
